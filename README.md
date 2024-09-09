@@ -80,7 +80,12 @@ precision = True Positive / (True Positive + False Positive)
 
 ```
 
-- Recall / Sensitivity / Hit-Rate
+- Recall / True Positive Rate / Sensitivity / Hit-Rate
+Recall can be defined as the percentage of correctly predicted positive outcomes out of all the actual positive outcomes. It can be given as the ratio of true positives (TP) to the sum of true positives and false negatives (TP + FN). Recall is also called Sensitivity.
+
+Recall identifies the proportion of correctly predicted actual positives.
+
+Mathematically, recall can be defined as the ratio of TP to (TP + FN).
 
 ```
 Recall = True Positive / (True Positive + False Negative)
@@ -88,6 +93,7 @@ Recall = True Positive / (True Positive + False Negative)
 ```
 
 - F1 Score
+f1-score is the weighted harmonic mean of precision and recall. The best possible f1-score would be 1.0 and the worst would be 0.0. f1-score is the harmonic mean of precision and recall. So, f1-score is always lower than accuracy measures as they embed precision and recall into their computation. The weighted average of f1-score should be used to compare classifier models, not global accuracy.
 
 ```
 F1 Score = 2 X Precision X Recall / (Precision + Recall)
@@ -95,11 +101,21 @@ F1 Score = 2 X Precision X Recall / (Precision + Recall)
 ```
 | Precision | Recall | F1 Score |
 | :-------- | :-------- | :-------- |
-| 0.93 | 0.87 | 0.90 |
+| 0.93 | 0.80 | 0.86 |
 
 ## Area under Curve (AUC)
 
 Better known as Area under Receiver operating characteristics curve (AUROC) is a graph between True Positive Rate also known as Recall & False Positive Rate also known as Fallout
+ROC AUC is a single number summary of classifier performance. The higher the value, the better the classifier. A perfect classifier will have a ROC AUC equal to 1, whereas a purely random classifier will have a ROC AUC equal to 0.5.
+Another tool to measure the classification model performance visually is ROC Curve. ROC Curve stands for Receiver Operating Characteristic Curve. An ROC Curve is a plot which shows the performance of a classification model at various classification threshold levels.
+
+The ROC Curve plots the True Positive Rate (TPR) against the False Positive Rate (FPR) at various threshold levels.
+
+True Positive Rate (TPR) is also called Recall. It is defined as the ratio of TP to (TP + FN).
+
+False Positive Rate (FPR) is defined as the ratio of FP to (FP + TN).
+
+In the ROC Curve, we will focus on the TPR (True Positive Rate) and FPR (False Positive Rate) of a single point. This will give us the general performance of the ROC curve which consists of the TPR and FPR at various threshold levels. So, an ROC Curve plots TPR vs FPR at different classification threshold levels. If we lower the threshold levels, it may result in more items being classified as positve. It will increase both True Positives (TP) and False Positives (FP).
 
 ![AUC](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/07e7ab3e-1ffa-4162-b08f-f0ff08a6e3a9)
 
@@ -114,9 +130,9 @@ Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 - Model Accuracy and Loss percentage
 
-| Model | Train Accuracy | Validation Accuracy | Training loss | Validation loss | Accuracy Average |
-| :-------- | :-------- | :-------- | :-------- | :-------- | :-------- |
-| Meso 4 | 96.21 | 83.95 | 07.89 | 15.66 | 88.8 |
+| Model | Train Accuracy | Validation Accuracy | 
+| :-------- | :-------- | :-------- |
+| Meso 4 | 79.71 | 77.66 |
 
 - Train Accuracy VS Validation Accuracy
 
