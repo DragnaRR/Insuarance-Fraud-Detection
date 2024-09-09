@@ -25,7 +25,7 @@ Some of the basic libraries that is been used in the project:
 
 - Total parameters
 
-![parameters](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/13311b56-3f01-43cc-8b8d-0768c3a13969)
+![parameters](https://github.com/DragnaRR/Insuarance-Fraud-Detection/blob/main/Screenshot/model_arch.PNG)
 
 ## Confusion Matrix
 
