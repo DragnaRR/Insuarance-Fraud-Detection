@@ -69,6 +69,7 @@ In this case, we have
 Performance metrices are a part of every machine learning pipeline. They tell whether the model is making any progress or not.  Metrics are used to monitor and measure the performance of a model (during training and testing), and don't need to be differentiable. 
 
 - precision
+
 Precision can be defined as the percentage of correctly predicted positive outcomes out of all the predicted positive outcomes. It can be given as the ratio of true positives (TP) to the sum of true and false positives (TP + FP).
 
 So, Precision identifies the proportion of correctly predicted positive outcome. It is more concerned with the positive class than the negative class.
@@ -81,6 +82,7 @@ precision = True Positive / (True Positive + False Positive)
 ```
 
 - Recall / True Positive Rate / Sensitivity / Hit-Rate
+
 Recall can be defined as the percentage of correctly predicted positive outcomes out of all the actual positive outcomes. It can be given as the ratio of true positives (TP) to the sum of true positives and false negatives (TP + FN). Recall is also called Sensitivity.
 
 Recall identifies the proportion of correctly predicted actual positives.
@@ -93,6 +95,7 @@ Recall = True Positive / (True Positive + False Negative)
 ```
 
 - F1 Score
+
 f1-score is the weighted harmonic mean of precision and recall. The best possible f1-score would be 1.0 and the worst would be 0.0. f1-score is the harmonic mean of precision and recall. So, f1-score is always lower than accuracy measures as they embed precision and recall into their computation. The weighted average of f1-score should be used to compare classifier models, not global accuracy.
 
 ```
