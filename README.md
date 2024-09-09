@@ -45,7 +45,7 @@ Four types of outcomes are possible while evaluating a classification model perf
 | :-------- | :-------- | :-------- | :-------- |
 | 211 | 22 | 15 | 52 |
 
-![Confusion Matrix](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/baeecd44-6d1a-4d52-89b6-3b795247fabf)
+![Confusion Matrix](https://github.com/DragnaRR/Insuarance-Fraud-Detection/blob/main/Screenshot/confusion_matrix.PNG)
 
 The confusion matrix shows `211 + 22 = 233 correct predictions` and `15 + 52 = 67 incorrect predictions`.
 
@@ -120,7 +120,7 @@ False Positive Rate (FPR) is defined as the ratio of FP to (FP + TN).
 
 In the ROC Curve, we will focus on the TPR (True Positive Rate) and FPR (False Positive Rate) of a single point. This will give us the general performance of the ROC curve which consists of the TPR and FPR at various threshold levels. So, an ROC Curve plots TPR vs FPR at different classification threshold levels. If we lower the threshold levels, it may result in more items being classified as positve. It will increase both True Positives (TP) and False Positives (FP).
 
-![AUC](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/07e7ab3e-1ffa-4162-b08f-f0ff08a6e3a9)
+![AUC](https://github.com/DragnaRR/Insuarance-Fraud-Detection/blob/main/Screenshot/AUC.PNG)
 
 ## Accuracy
 
@@ -135,27 +135,8 @@ Accuracy = (TP + TN) / (TP + TN + FP + FN)
 
 | Model | Train Accuracy | Validation Accuracy | 
 | :-------- | :-------- | :-------- |
-| Meso 4 | 79.71 | 77.66 |
-
-- Train Accuracy VS Validation Accuracy
-
-![Accuracy](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/180bd55b-8613-4389-bf2e-13af7a451ff3)
+| ANN | 79.71 | 77.66 |
 
 - Train loss VS Validation loss
   
-![Loss](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/9945e2d4-fff4-47a0-bfc4-88a733b96312)
-
-## Web Application
-
-![Home Page](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/5127f6a7-6dfa-4b77-9d25-85577ef30164)
-
-![Upload](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/97f6a6d9-1cad-4818-ba0e-db54c861e1c2)
-
-![Result](https://github.com/DragnaRR/Deepfake-Detection-System/assets/95096810/2a983e59-126b-47f9-a4ba-c025079f012e)
-
-[Download Paper](https://github.com/DragnaRR/Deepfake-Detection-System/files/12874285/paper.pdf)
-
-
-
-
- 
+![Loss](https://github.com/DragnaRR/Insuarance-Fraud-Detection/blob/main/Screenshot/loss.PNG)
