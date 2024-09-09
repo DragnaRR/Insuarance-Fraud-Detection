@@ -69,6 +69,11 @@ In this case, we have
 Performance metrices are a part of every machine learning pipeline. They tell whether the model is making any progress or not.  Metrics are used to monitor and measure the performance of a model (during training and testing), and don't need to be differentiable. 
 
 - precision
+Precision can be defined as the percentage of correctly predicted positive outcomes out of all the predicted positive outcomes. It can be given as the ratio of true positives (TP) to the sum of true and false positives (TP + FP).
+
+So, Precision identifies the proportion of correctly predicted positive outcome. It is more concerned with the positive class than the negative class.
+
+Mathematically, precision can be defined as the ratio of TP to (TP + FP).
 
 ```
 precision = True Positive / (True Positive + False Positive)
